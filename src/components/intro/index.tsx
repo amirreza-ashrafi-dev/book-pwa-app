@@ -2,9 +2,11 @@
 
 import { motion, useAnimate } from "framer-motion";
 import IntroSlider from "./introSlider";
+import { useState } from "react";
 
 const Intro = () => {
   const [scope, animate] = useAnimate();
+  const [letsStart, setLetsStart] = useState(false);
   const handleIntroShowPage = () => {
     localStorage.setItem("intro", "1");
     animate(
@@ -13,10 +15,10 @@ const Intro = () => {
       { duration: 1, ease: "easeInOut" }
     );
   };
-  return (
+  return !letsStart ? (
     <motion.div
       ref={scope}
-      className="flex flex-col h-screen top-0 left-0 fixed w-full"
+      className="flex flex-col h-screen top-0 left-0 fixed w-full z-50"
     >
       <div className="w-full absolute flex justify-end z-20">
         <span
@@ -34,7 +36,9 @@ const Intro = () => {
       />
       <motion.div
         initial={{ marginLeft: "-500px" }}
-        animate={{ marginLeft: "0" }}
+        animate={{
+          marginLeft: "0",
+        }}
         transition={{ duration: 0.75 }}
         style={{
           borderWidth: `${window.innerHeight / 2 + 38}px 0 0 ${
@@ -42,7 +46,7 @@ const Intro = () => {
           }px`,
           borderColor: "transparent transparent transparent #fac63d",
         }}
-        className={` rotate-0 absolute -mt-[37px]`}
+        className={` "rotate-0" absolute -mt-[37px] `}
       />
       <motion.div
         initial={{ marginLeft: "-500px" }}
@@ -51,7 +55,16 @@ const Intro = () => {
         transition={{ duration: 0.75 }}
       />
       <div className="absolute left-0 right-0 top-16 h-[100px]">
-        <IntroSlider />
+        <IntroSlider changeStart={setLetsStart} />
+      </div>
+    </motion.div>
+  ) : (
+    <motion.div
+      className="flex flex-col h-screen top-0 left-0 fixed w-full z-50"
+      ref={scope}
+    >
+      <div className="absolute left-0 right-0 top-16 h-[100px]">
+        <IntroSlider changeStart={setLetsStart} start={letsStart} handleIntroShow={handleIntroShowPage} />
       </div>
     </motion.div>
   );
