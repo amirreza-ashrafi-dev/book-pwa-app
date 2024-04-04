@@ -1,4 +1,3 @@
-import Link from "next/link";
 // icons
 import Search from "@/icons/search-icon";
 import Pic from "../../public/icons/dnn 1.png";
@@ -9,7 +8,9 @@ import Pic5 from "../../public/remaining.png";
 import Pic6 from "../../public/remaining2.png";
 import Pic7 from "../../public/remaining3.png";
 import Pic8 from "../../public/remaining4.png";
+
 import Image from "next/image";
+import CircularProgres from "@/components/circular-progress";
 
 export default function Home() {
   return (
@@ -86,15 +87,68 @@ export default function Home() {
       <div>
         <div>
           <span className="font-bold  text-[19px]">remaining</span>
-          <div className="flex mt-2 justify-center">
-            <Image alt="recommended" className="mr-4" src={Pic5} width={250} />
-            <Image alt="recommended" className="mr-4" src={Pic6} width={250} />
-            <Image alt="recommended" className="mr-4" src={Pic7} width={250} />
-            <Image alt="recommended" className="mr-4" src={Pic8} width={250} />
+          <div className="flex mt-2 justify-center items-center">
+            <div className="relative">
+              <Image alt="recommended" className="mr-4" src={Pic5} />
+              <div className="absolute bottom-1 right-3 z-10">
+                <CircularProgres />
+                <span className="text-white absolute top-0 text-[9px] ml-[9px] mt-[8px]">
+                  20%
+                </span>
+              </div>
+            </div>
+            <div className="relative ">
+              <Image alt="recommended" className="mr-4" src={Pic6} />
+              <div
+                className="bg-black absolute top-0 z-20 w-[90px]  h-full opacity-50"
+                style={{
+                  background:
+                    "linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(254,254,254,0.7120098039215687) 100%)",
+                }}
+              />
+
+              <div className="absolute bottom-1 right-3 z-20">
+                <CircularProgres />
+                <span className="text-white absolute top-0 text-[9px] ml-[9px] mt-[8px]">
+                  20%
+                </span>
+              </div>
+            </div>
+            <div className="relative">
+              <Image alt="recommended" className="mr-4" src={Pic7} />
+              <div
+                className="bg-black w-[90px] absolute top-0 z-20 h-full opacity-50"
+                style={{
+                  background:
+                    "linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(254,254,254,0.7120098039215687) 100%)",
+                }}
+              />
+              <div className="absolute bottom-1 right-3 z-20">
+                <CircularProgres />
+                <span className="text-white  absolute top-0 text-[9px] ml-[9px] mt-[8px]">
+                  20%
+                </span>
+              </div>
+            </div>
+            <div className="relative">
+              <Image alt="recommended" className="mr-4" src={Pic8} />
+              <div
+                className="bg-black absolute top-0 z-20 w-[90px] h-full opacity-50"
+                style={{
+                  background:
+                    "linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(254,254,254,0.7120098039215687) 100%)",
+                }}
+              />
+              <div className="absolute bottom-1 right-3 z-20">
+                <CircularProgres />
+                <span className="text-white absolute top-0 text-[9px] ml-[9px] mt-[8px]">
+                  20%
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="h-[50px] w-full"></div>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ControlShowIntro from "@/components/control-show-intro";
+import Menu from "@/components/menu";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -75,7 +76,12 @@ export default function RootLayout({
         /> */}
       </head>
       <body className={inter.className}>
-        <ControlShowIntro>{children}</ControlShowIntro>
+        <ControlShowIntro>
+          <div>
+            {children}
+            <Menu />
+          </div>
+        </ControlShowIntro>
       </body>
     </html>
   );
