@@ -46,7 +46,7 @@ const Intro = () => {
           }px`,
           borderColor: "transparent transparent transparent #fac63d",
         }}
-        className={` "rotate-0" absolute -mt-[37px] `}
+        className={` "rotate-0" absolute -mt-[37px]  h-full`}
       />
       <motion.div
         initial={{ marginLeft: "-500px" }}

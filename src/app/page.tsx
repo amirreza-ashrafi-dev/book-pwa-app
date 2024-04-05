@@ -25,7 +25,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="Search..."
-              className="h-[40px] outline-none"
+              className="h-[40px] outline-none pl-[18px]"
             />
             <div className="absouloute -translate-x-6">
               <Search />
