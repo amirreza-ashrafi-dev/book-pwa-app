@@ -9,17 +9,23 @@ import Pic6 from "../../public/remaining2.png";
 import Pic7 from "../../public/remaining3.png";
 import Pic8 from "../../public/remaining4.png";
 
+import Link from "next/link";
+
 import Image from "next/image";
 import CircularProgres from "@/components/circular-progress";
 
 export default function Home() {
+  // const Router = useRouter();
   return (
     <div className="mt-4 mx-4">
       {/* Header */}
       <div>
         <div className="flex justify-between w-full">
-          <button className="bg-Grandis w-[120px] h-[40px] rounded-xl">
-            log in
+          <button
+            className="bg-Grandis w-[120px] h-[40px] rounded-xl"
+            // onClick={() => Router.push("/auth/login")}
+          >
+            <Link href={"/auth/login"}>log in</Link>
           </button>
           <div className="flex items-center relative">
             <input
@@ -84,7 +90,7 @@ export default function Home() {
         </div>
       </div>
       {/* remaining */}
-      <div>
+      <div className="mb-3">
         <div>
           <span className="font-bold  text-[19px]">remaining</span>
           <div className="flex mt-2 justify-center items-center">

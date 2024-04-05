@@ -13,7 +13,15 @@ const Menu = () => {
   const router = useRouter();
 
   return (
-    <div className="flex justify-between w-[91%] mx-auto mt-6 px-6 pb-4 pt-4 rounded-xl bg-[#e0e0dc] ">
+    <div
+      className={`flex justify-between ${
+        pathName === "/auth/login"
+          ? "hidden"
+          : pathName === "/auth/signup"
+          ? "hidden"
+          : ""
+      }  w-[91%] mx-auto mt-6 px-6 pb-4 pt-4 rounded-xl bg-[#e0e0dc] `}
+    >
       <div onClick={() => router.push("/")}>
         <HomeIcon fill={pathName === "/" ? "#A3470A" : "#2E3731"} />
       </div>
