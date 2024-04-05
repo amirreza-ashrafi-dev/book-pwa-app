@@ -28,6 +28,8 @@ const config: Config = {
       screens: {
         small: "380px",
         superSmall: "350px",
+        iphoneSE : "375px",
+        iphoneXR : "414px"
       },
     },
   },

@@ -130,9 +130,14 @@ const Saved = () => {
         </div>
         {/* audio books cart */}
         <div className="w-full flex justify-between flex-wrap font-mono">
-          <div className="mb-5">
-            <div className="relative w-[180px] ">
-              <Image alt="audio-book" src={Pic3} width={180} />
+          <div className="mb-5 iphoneSE:w-full iphoneXR:w-fit ">
+            <div className="relative w-[180px] iphoneSE:w-full iphoneXR:w-fit">
+              <Image
+                alt="audio-book"
+                src={Pic3}
+                width={180}
+                className="iphoneSE:w-full iphoneXR:w-[180px]"
+              />
               <div className="absolute bottom-0 flex justify-between w-full bg-[#D9D9D9] rounded-bl-xl rounded-br-xl">
                 <div className="flex flex-col items-center ml-3 py-2">
                   <span>shadows</span>
@@ -144,9 +149,14 @@ const Saved = () => {
               </div>
             </div>
           </div>
-          <div className="mb-5">
-            <div className="relative w-[180px] ">
-              <Image alt="audio-book" src={Pic4} width={180} />
+          <div className="mb-5 iphoneSE:w-full iphoneXR:w-fit ">
+            <div className="relative w-[180px] iphoneSE:w-full iphoneXR:w-fit">
+              <Image
+                alt="audio-book"
+                src={Pic4}
+                width={180}
+                className="iphoneSE:w-full iphoneXR:w-[180px]"
+              />
               <div className="absolute bottom-0 flex justify-between w-full bg-[#D9D9D9] rounded-bl-xl rounded-br-xl">
                 <div className="flex flex-col items-center ml-3 py-2">
                   <span>shadows</span>
@@ -158,9 +168,14 @@ const Saved = () => {
               </div>
             </div>
           </div>
-          <div className="mb-5">
-            <div className="relative w-[180px] ">
-              <Image alt="audio-book" src={Pic5} width={180} />
+          <div className="mb-5 iphoneSE:w-full iphoneXR:w-fit ">
+            <div className="relative w-[180px] iphoneSE:w-full iphoneXR:w-fit">
+              <Image
+                alt="audio-book"
+                src={Pic5}
+                width={180}
+                className="iphoneSE:w-full iphoneXR:w-[180px]"
+              />
               <div className="absolute bottom-0 flex justify-between w-full bg-[#D9D9D9] rounded-bl-xl rounded-br-xl">
                 <div className="flex flex-col items-center ml-3 py-2">
                   <span>shadows</span>
@@ -172,9 +187,14 @@ const Saved = () => {
               </div>
             </div>
           </div>
-          <div className="mb-5">
-            <div className="relative w-[180px] ">
-              <Image alt="audio-book" src={Pic6} width={180} />
+          <div className="mb-5 iphoneSE:w-full iphoneXR:w-fit ">
+            <div className="relative w-[180px] iphoneSE:w-full iphoneXR:w-fit">
+              <Image
+                alt="audio-book"
+                src={Pic6}
+                width={180}
+                className="iphoneSE:w-full iphoneXR:w-[180px]"
+              />
               <div className="absolute bottom-0 flex justify-between w-full bg-[#D9D9D9] rounded-bl-xl rounded-br-xl">
                 <div className="flex flex-col items-center ml-3 py-2">
                   <span>shadows</span>
