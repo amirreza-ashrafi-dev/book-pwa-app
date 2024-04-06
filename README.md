@@ -1,6 +1,7 @@
 ## Book pwa application
 
 ![pwa book](./public/book%20pwa%20application.JPG)
+![pwa book](./public/prof.png)
 
 ### technologies used
 1. next.js
