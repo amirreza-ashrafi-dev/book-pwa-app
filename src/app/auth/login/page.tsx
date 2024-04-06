@@ -7,8 +7,6 @@ import UserIcon from "@/icons/auth-icons/user";
 import EmailIcon from "@/icons/auth-icons/sms";
 import LockIcon from "@/icons/auth-icons/lock";
 import Eye from "@/icons/auth-icons/eye";
-import GoogleIcon from "@/icons/auth-icons/goole";
-import FacebookIcon from "@/icons/auth-icons/google";
 
 const SignUp = () => {
   return (

@@ -78,7 +78,7 @@ export default function Home() {
               <span className="text-Chino">science</span>
               <span className="text-[13px]">
                 sara is a little girl who living with her mom. she loves
-                animals. one day when shes playing with her imaginary friend....
+                animals. one day....
               </span>
             </div>
           </div>
