@@ -61,10 +61,12 @@ export default function Home() {
           <span className="font-bold">books</span>
           <Image alt="books" src={Pic2} className="mt-2" />
         </div>
-        <div className="px-1">
-          <span className="font-bold">audio books</span>
-          <Image alt="books" src={Pic3} className="mt-2" />
-        </div>
+        <Link href={"/book/audio-book"}>
+          <div className="px-1">
+            <span className="font-bold">audio books</span>
+            <Image alt="books" src={Pic3} className="mt-2" />
+          </div>
+        </Link>
       </div>
       {/* recommended */}
       <div className="mt-4">

@@ -1,6 +1,6 @@
 interface Chevron {
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 }
 
 const Chevron = ({ width, height }: Chevron) => {

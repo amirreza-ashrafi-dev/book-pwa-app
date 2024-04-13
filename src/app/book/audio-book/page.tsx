@@ -6,17 +6,22 @@ import Play from "@/icons/audio-books/play-icon";
 import Review from "@/icons/audio-books/review";
 import Star from "@/icons/audio-books/star";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 const BookAudio = () => {
+  const Router = useRouter();
   return (
     <div>
-      <div className="h-[320px] bg-Grandis w-full relative -z-40">
+      <div className="h-[320px] bg-Grandis w-full relative">
         <div className="w-full flex pt-5">
-          <div className="rotate-180 translate-x-4">
+          <div
+            className="rotate-180 translate-x-4"
+            onClick={() => Router.back()}
+          >
             <Chevron width={30} height={30} />
           </div>
-          <div className="mx-auto">
+          <div className="mx-auto ">
             <span className="font-mono text-[20px] font-bold">
               princess and the goblin
             </span>
