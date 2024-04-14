@@ -57,11 +57,13 @@ export default function Home() {
         </div>
       </div>
       <div className="flex justify-between mt-4">
-        <div className="px-1">
-          <span className="font-bold">books</span>
-          <Image alt="books" src={Pic2} className="mt-2" />
-        </div>
-        <Link href={"/book/audio-book"}>
+        <Link href={"/book/ebook"}>
+          <div className="px-1">
+            <span className="font-bold">books</span>
+            <Image alt="books" src={Pic2} className="mt-2" />
+          </div>
+        </Link>
+        <Link href={"/book/audio"}>
           <div className="px-1">
             <span className="font-bold">audio books</span>
             <Image alt="books" src={Pic3} className="mt-2" />

@@ -6,11 +6,12 @@ import Play from "@/icons/audio-books/play-icon";
 import Review from "@/icons/audio-books/review";
 import Star from "@/icons/audio-books/star";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { useRouter, useParams } from "next/navigation";
 import Image from "next/image";
 
 const BookAudio = () => {
   const Router = useRouter();
+  const params = useParams();
   return (
     <div>
       <div className="h-[320px] bg-Grandis w-full relative">
@@ -45,7 +46,7 @@ const BookAudio = () => {
         <h4 className="text-[25px] font-bold">princess and the goblin</h4>
         <div className="text-Chino mt-4">
           <span>by: jamilla francis</span>
-          <span className="ml-6">1:45:00</span>
+          {params.type === "audio" && <span className="ml-6">1:45:00</span>}
         </div>
         <div className="flex mt-5">
           <div className="flex">
@@ -73,9 +74,19 @@ const BookAudio = () => {
         </div>
       </div>
       <div className="flex justify-around mt-32">
-        <button className="bg-Tenne border-[2px] w-[112px] mt-4 -translate-y-2 h-[36px]  rounded-bl-xl rounded-tr-xl text-white ">
-          listen
-        </button>
+        {params.type === "audio" && (
+          <button
+            onClick={() => Router.push("/book/playlist/1")}
+            className="bg-Tenne border-[2px] w-[112px] mt-4 -translate-y-2 h-[36px]  rounded-bl-xl rounded-tr-xl text-white "
+          >
+            listen
+          </button>
+        )}
+        {params.type === "ebook" && (
+          <button className="bg-Tenne border-[2px] w-[112px] mt-4 -translate-y-2 h-[36px]  rounded-bl-xl rounded-tr-xl text-white ">
+            next
+          </button>
+        )}
         <button className="border-Tenne border-[2px] w-[112px] mt-4 -translate-y-2 h-[36px]  rounded-bl-xl rounded-tr-xl text-Tenne ">
           save
         </button>
