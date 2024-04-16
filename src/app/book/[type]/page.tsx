@@ -38,9 +38,11 @@ const BookAudio = () => {
       >
         <Image src={BooksPicture} alt="books-pic" className="mx-auto" />
         {/* player */}
-        <div className="border-[1px] -bottom-[13px] border-gray-400 bg-white w-fit p-6 rounded-[50%] absolute right-14 opacity-90">
-          <Play width={25} height={25} />
-        </div>
+        {params.type === "audio" && (
+          <div className="border-[1px] -bottom-[13px] border-gray-400 bg-white w-fit p-6 rounded-[50%] absolute right-14 opacity-90">
+            <Play width={25} height={25} />
+          </div>
+        )}
       </motion.div>
       <div className="mt-8 px-4">
         <h4 className="text-[25px] font-bold">princess and the goblin</h4>

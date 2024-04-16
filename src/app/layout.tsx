@@ -70,10 +70,6 @@ export default function RootLayout({
         <meta property="og:description" content="online book application" />
         <meta property="og:site_name" content="Books" />
         <meta property="og:url" content="https://Books.com" />
-        {/* <meta
-          property="og:image"
-          content="https://yourdomain.com/icons/apple-touch-icon.png"
-        /> */}
       </head>
       <body className={inter.className}>
         <ControlShowIntro>

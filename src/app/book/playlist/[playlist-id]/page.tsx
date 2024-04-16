@@ -6,6 +6,7 @@ import Play from "@/icons/audio-books/play-icon";
 import { motion } from "framer-motion";
 import { useRouter, useParams } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 const BookAudio = () => {
   const Router = useRouter();
@@ -54,7 +55,9 @@ const BookAudio = () => {
         <div className="px-3 mt-6 flex justify-between items-center">
           <div className="flex items-center">
             <div className="border-[1px] mr-2 border-gray-400 w-fit p-4 rounded-[50%]">
-              <Play width={17} height={17} />
+              <Link href={"/book/read/10?type=audio"}>
+                <Play width={17} height={17} />
+              </Link>
             </div>
             <span className="text-[18px]">1.chapter one</span>
           </div>
@@ -65,7 +68,9 @@ const BookAudio = () => {
         <div className="px-3 mt-6 flex justify-between items-center">
           <div className="flex items-center">
             <div className="border-[1px] mr-2 border-gray-400 w-fit p-4 rounded-[50%]">
-              <Play width={17} height={17} />
+              <Link href={"/book/read/10?type=audio"}>
+                <Play width={17} height={17} />
+              </Link>
             </div>
             <span className="text-[18px]">2.chapter two</span>
           </div>
@@ -76,7 +81,9 @@ const BookAudio = () => {
         <div className="px-3 mt-6 flex justify-between items-center">
           <div className="flex items-center">
             <div className="border-[1px] mr-2 border-gray-400 w-fit p-4 rounded-[50%]">
-              <Play width={17} height={17} />
+              <Link href={"/book/read/10?type=audio"}>
+                <Play width={17} height={17} />
+              </Link>
             </div>
             <span className="text-[18px]">3.chapter three</span>
           </div>
@@ -87,7 +94,9 @@ const BookAudio = () => {
         <div className="px-3 mt-6 flex justify-between items-center">
           <div className="flex items-center">
             <div className="border-[1px] mr-2 border-gray-400 w-fit p-4 rounded-[50%]">
-              <Play width={17} height={17} />
+              <Link href={"/book/read/10?type=audio"}>
+                <Play width={17} height={17} />
+              </Link>
             </div>
             <span className="text-[18px]">4.chapter four</span>
           </div>
@@ -98,7 +107,9 @@ const BookAudio = () => {
         <div className="px-3 mt-6 flex justify-between items-center">
           <div className="flex items-center">
             <div className="border-[1px] mr-2 border-gray-400 w-fit p-4 rounded-[50%]">
-              <Play width={17} height={17} />
+              <Link href={"/book/read/10?type=audio"}>
+                <Play width={17} height={17} />
+              </Link>
             </div>
             <span className="text-[18px]">5.chapter five</span>
           </div>
@@ -109,7 +120,9 @@ const BookAudio = () => {
         <div className="px-3 mt-6 flex justify-between items-center">
           <div className="flex items-center">
             <div className="border-[1px] mr-2 border-gray-400 w-fit p-4 rounded-[50%]">
-              <Play width={17} height={17} />
+              <Link href={"/book/read/10?type=audio"}>
+                <Play width={17} height={17} />
+              </Link>
             </div>
             <span className="text-[18px]">6.chapter six</span>
           </div>
